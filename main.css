@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('ong.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 18px;
+  }
+  
+  .topo-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: pink;
+    z-index: 1000;
+  }
+  
+  .cabecalho {
+    padding: 10px 0 0 0;
+    position: relative;
+  }
+  
+  .cabecalho h1, .cabecalho h2 {
+    color: #880e4f;
+    margin: 0;
+  }
+  
+  .cabecalho h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cabecalho h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .menu {
+    background-color: #f36496;
+    padding: 10px 0;
+  }
+  
+  .menu a {
+    color: #880e4f;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu a.ativo {
+    border-bottom: 3px solid #880e4f;
+  }
+  
+  .conteudo {
+    padding-top: 500px;
+  }
+  
+  .secao {
+    padding: 50px 20px;
+    scroll-margin-top: 330px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .secao.sem-margem {
+    margin-bottom: 0 !important;
+  }
+  
+  .valores {
+    background-color: #fcd1e2;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .valor {
+    width: 200px;
+    height: 200px;
+    background-color: #f06292;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .valor .descricao {
+    display: none;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .valor:hover .titulo {
+    display: none;
+  }
+  
+  .valor:hover .descricao {
+    display: block;
+  }
+  
+  /* JUSTIFICAR TEXTOS */
+  .diferencial p,
+  .historia p,
+  .programas p,
+  .contato p
+  .saiba p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .assistencia {
+    background-color: #f48fb1;
+    color: black;
+  }
+  
+  .diferencial {
+    background-color: #ec407a;
+    color: white;
+  }
+  
+  .atividade {
+    background-color: #f8bbd0;
+    color: black;
+    margin-bottom: 180px;
+  }
+  
+  .saiba {
+    background-color: #dd6b93;
+    color: black;
+    margin-bottom: 180px;
+  }
+  
+  .programas {
+    background-color: #fcd1e2;
+    color: black;
+    margin-bottom: 180px;
+  }
+  
+  .como-ajudar {
+    background-color: #f06292;
+    color: black;
+  }
+  
+  .contato {
+    background-color: #f8bbd0;
+    color: black;
+  }
+  
+  .carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+  }
+  
+  .item {
+    min-width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .seta-container {
+    background-color: #f8bbd0;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .seta {
+    background-color: #f06292;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .botao-doe {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c2185b;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .titulo-animado {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .parallax { padding-top: 100px; }
+  
+  h1, h2, h3 { font-size: 1.8em; }
+  
+  button { font-size: 1.1em; padding: 12px 24px; }
+  
+  .carousel { transform: scale(1.1); }
+  
+  section { margin: 0px 0; }
+  
+  .secao.coladas { margin-bottom: 0; }
+  
+  .imagem-historia {
+    width: 40%; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Limita o tamanho máximo */
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem e adiciona espaçamento */
+    border-radius: 8px; /* Adiciona bordas arredondadas se necessário */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opcional: sombra suave ao redor da imagem */
+  }
+  
+  /* Novas seções para história e atividades */
+  .historia {
+    margin-top: 180px;
+    background-color: #f8bbd0; /* Cor de fundo para a seção história */
+    color: black;
+  }
+  
+  .atividades {
+    background-color: #f54d90; /* Cor de fundo para a seção atividades */
+    color: black;
+    margin-bottom: 180px;
+  }
